@@ -8,8 +8,8 @@ public class demo2 {
 			method2();
 			//method3(); From the static method non-static method can't be called
 			
-			demo2 dem3=new demo2();
-			dem3.method3();
+			demo2 dem2=new demo2();
+			dem2.method3();
 		}
 		
 		static void method1() {
