@@ -32,7 +32,8 @@ class MonitorWorker implements Runnable{
 	
 }
 class Monitor{
-	public synchronized void displayGreeting(String name){
+	public  void displayGreeting(String name){
+		synchronized(this) {
 		for(int i=1;i<=10;i++) {
 			Utils.printmessage(i + ": How are you "+name+" ?");
 			try {
@@ -40,6 +41,7 @@ class Monitor{
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-	  }
+	      }
+        }
     }
 }
