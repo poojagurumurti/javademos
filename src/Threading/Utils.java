@@ -2,7 +2,7 @@ package Threading;
 
 public class Utils {
 
-	public static void printmessage(String message) {
-		System.out.println(Thread.currentThread().getName()+"-"+message);
+	public static void printmessage(Object message) {
+		System.out.println(Thread.currentThread().getName()+"-"+message.toString());
 	}
 }

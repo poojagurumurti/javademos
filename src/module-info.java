@@ -5,5 +5,3 @@
  * @author ptamragouri
  *
  */
-module javademosproject {
-}
